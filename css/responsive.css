@@ -44,6 +44,21 @@
   }
 }
 
+/* Small Tablet - Landscape mode */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  /* ABOUT ME */
+  .aboutMe__section {
+    margin: 80px auto;
+
+    & img {
+      display: none;
+    }
+  }
+}
 /* Phone */
 
 @media (max-width: 640px) {
@@ -57,11 +72,29 @@
     padding: 0 1 rem;
   }
 
+  .section__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    text-align: center;
+  }
+
   /* Header */
   header {
     margin-top: 20px;
   }
   .header__badge_container {
     flex-direction: column;
+  }
+
+  /* ABOUT ME */
+  .aboutMe__container {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+  }
+
+  .aboutMe__content_container {
+    border-radius: 2rem;
   }
 }
